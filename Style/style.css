@@ -5,3 +5,85 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* Share Style */
+.display-flex{
+  display: flex;
+}
+
+/* dark 02 */
+.text-gray{
+  color: #424242;
+}
+/* dark 03*/
+  .text-light-gray{
+    color: #727272;
+  }
+
+  .bg-light-color{
+    background-color: rgba(255, 144, 14, 0.10);
+  }
+
+  .btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 20px;
+    font-weight: 600px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+  }
+/* Header Style */
+
+/* Nav Style */
+
+.brand{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.nav-bar{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links{
+  text-decoration: none;
+}
+
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-bar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Banner Style */
+
+.banner-content{
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner-images{
+  width: 100%;
+}
+
+/* Reponsive Media Qrery */
+@media screen and (max-width: 576px) {
+  .nav-bar, .nav-links{
+    flex-direction: column;
+  }
+}
