@@ -255,6 +255,16 @@ main section {
   }
 }
 
+/* Footet Section */
+#footer-section{
+  text-align: center;
+  max-width: 1440px;
+  padding: 1px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 /* Medium Size Device */
 
 @media screen and (min-width: 576px) and (max-width:992px) {
