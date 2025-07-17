@@ -100,6 +100,7 @@ main section {
 
 .banner-images {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 /* Team and features */
@@ -129,9 +130,9 @@ main section {
   color: #131313;
 }
 
-.features {
-  color: #FF900E;
-}
+
+/* Features you will love & enjoy */
+
 
 /* Some Facts */
 .fact-card{
@@ -162,13 +163,24 @@ main section {
   margin-top: 10px;
 }
 
+/* Our Sponsors */
+  .sponsor-info{
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-
-
+  .sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .sponsor-company img{
+    filter: grayscale(30%);
+  }
 
 /* Reponsive Media Qrery */
-@media screen and (max-width: 576px) {
 
+@media screen and (max-width: 576px) {
   .nav-bar,
   .nav-links,
   .teams {
@@ -179,10 +191,22 @@ main section {
     max-width: 100%;
   }
 
-  .teams-images {
+  .teams-images, 
+  .facts-container,
+  .sponsor-company {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .facts-container{
+    gap: 24px;
+    justify-items: center;
+  }
+  .sponsor-company{
+    justify-items: center;
+    gap: 40px;
+  }
+  .facts{
+    text-align: center;
+  }
   .our-features {
     margin: 20px auto;
     text-align: center;
@@ -190,12 +214,22 @@ main section {
 }
 
 /* Medium Size Device */
+
 @media screen and (min-width: 576px) and (max-width:992px) {
   .teams {
     flex-direction: column;
   }
-
+  .fact-info{
+    margin-left: 95px;
+  }
   .our-features {
     margin: 20px auto;
     text-align: center;
   }
+  .sponsor-company,
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+}
