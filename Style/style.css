@@ -11,6 +11,12 @@
   display: flex;
 }
 
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
 /* dark 02 */
 .text-gray {
   color: #424242;
@@ -100,7 +106,9 @@ main section {
 .teams {
   align-items: center;
 }
-
+.teams-images img{
+  width: 100%;
+}
 .teams-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,11 +118,6 @@ main section {
 .our-features {
   margin-left: 75px;
   max-width: 530px;
-}
-
-.features-title {
-  font-size: 2.8rem;
-  font-weight: 700;
 }
 
 .quick-list {
@@ -128,6 +131,35 @@ main section {
 
 .features {
   color: #FF900E;
+}
+
+/* Some Facts */
+.fact-card{
+  border: 1px solid #FF900E;
+  border-radius: 3px;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-description{
+  max-width: 540px;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600px;
+  margin-top: 10px;
 }
 
 
