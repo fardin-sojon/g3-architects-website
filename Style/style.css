@@ -7,83 +7,163 @@
 }
 
 /* Share Style */
-.display-flex{
+.display-flex {
   display: flex;
 }
 
 /* dark 02 */
-.text-gray{
+.text-gray {
   color: #424242;
 }
+
 /* dark 03*/
-  .text-light-gray{
-    color: #727272;
-  }
+.text-light-gray {
+  color: #727272;
+}
 
-  .bg-light-color{
-    background-color: rgba(255, 144, 14, 0.10);
-  }
+.bg-light-color {
+  background-color: rgba(255, 144, 14, 0.10);
+}
 
-  .btn-primary{
-    background-color: #FF900E;
-    color: white;
-    padding: 20px 20px;
-    font-weight: 600px;
-    font-size: 1.25rem;
-    border-radius: 8px;
-    border: none;
-  }
+.btn-primary {
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 20px;
+  font-weight: 600px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main section {
+  margin-top: 130px;
+}
+
 /* Header Style */
 
 /* Nav Style */
 
-.brand{
+.brand {
   font-weight: 700;
   font-size: 3rem;
 }
-.nav-bar{
+
+.nav-bar {
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-links{
+.nav-links {
   text-decoration: none;
 }
 
-.nav-item{
+.nav-item {
   list-style: none;
   margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
   text-decoration: none;
   font-weight: 500;
 }
 
-.nav-bar, .banner{
+.nav-bar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /* Banner Style */
 
-.banner-content{
+.banner-content {
   max-width: 50%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
   font-weight: 700;
   font-size: 4rem;
 }
 
-.banner-images{
+.banner-images {
   width: 100%;
 }
 
+/* Team and features */
+.teams {
+  align-items: center;
+}
+
+.teams-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.our-features {
+  margin-left: 75px;
+  max-width: 530px;
+}
+
+.features-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.quick-list {
+  color: #727272;
+  font-weight: 500;
+}
+
+.of-our {
+  color: #131313;
+}
+
+.features {
+  color: #FF900E;
+}
+
+
+
+
+
 /* Reponsive Media Qrery */
 @media screen and (max-width: 576px) {
-  .nav-bar, .nav-links{
+
+  .nav-bar,
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .teams-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    margin: 20px auto;
+    text-align: center;
+  }
 }
+
+/* Medium Size Device */
+@media screen and (min-width: 576px) and (max-width:992px) {
+  .teams {
+    flex-direction: column;
+  }
+
+  .our-features {
+    margin: 20px auto;
+    text-align: center;
+  }
