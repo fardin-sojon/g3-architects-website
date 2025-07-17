@@ -152,6 +152,21 @@ main section {
   margin-bottom: 0;
 }
 
+.images-architect{
+  width: 100%;
+}
+#experience-badge{
+  padding: 42px 46px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 /* Some Facts */
 .fact-card{
   border: 1px solid #FF900E;
@@ -201,7 +216,8 @@ main section {
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-links,
-  .teams {
+  .teams,
+  .features-box {
     flex-direction: column;
   }
 
@@ -228,6 +244,14 @@ main section {
   .our-features {
     margin: 20px auto;
     text-align: center;
+  }
+  #features-title{
+    text-align: center;
+    padding: 0px;
+  }
+  #experience-badge{
+    margin: 20px auto;
+    width: 100%;
   }
 }
 
