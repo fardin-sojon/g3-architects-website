@@ -133,6 +133,24 @@ main section {
 
 /* Features you will love & enjoy */
 
+.features-box{
+  gap: 140px;
+}
+#features-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.feature-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+}
+.feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Some Facts */
 .fact-card{
